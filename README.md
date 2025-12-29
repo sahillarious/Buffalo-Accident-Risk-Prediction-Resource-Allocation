@@ -1,4 +1,5 @@
 # Buffalo Accident Risk Prediction & Resource Allocation 🚒🚔🚑
+![System Flowchart](1.png)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![RL](https://img.shields.io/badge/Reinforcement%20Learning-PPO-green.svg)](https://openai.com/blog/openai-baselines-ppo/)
@@ -27,7 +28,7 @@ Urban emergency response is often static and slow to adapt to real-time risk. [c
 * **State Space:** A comprehensive vector representing accident probabilities, total available resources, current allocation status, and cell resource limits.
 * **Action Space:** Three-part discrete actions: Action Type (allocate/deallocate), Resource Type index (Police, EMS, DOT), and Target Grid Cell index.
 * **Algorithm:** **PPO (Proximal Policy Optimization)** was selected for its stability and performance on complex control tasks, utilizing an Actor-Critic architecture.
-
+![RL Steps](3.png)
 ### 3. Resource Requirements
 The agent learns to fulfill specific resource sets based on accident profiles:
 * **Accident/Injury:** Requires Police and Ambulance (EMS).
